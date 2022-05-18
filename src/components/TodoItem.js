@@ -1,7 +1,9 @@
 import React from "react";
 
 const TodoItem = (props) => {
-	const items = [
+	/* 
+
+	const item = [
 		{
 			id: 1,
 			text: "Membuang sampah",
@@ -19,16 +21,21 @@ const TodoItem = (props) => {
 		},
 	];
 
+     value ke complete
+     label ke text
+    */
+
+	// input => untuk mengetahhui apakah sudah di centang atau belum
+	// label =>  memberikan hasil berupa text
+
 	return (
 		<>
-			<li className="list-group-item">
-				<div className="form-check">
-					<input className="form-check-input" type="checkbox" value={props.item.completed} checked={props.item.completed} readOnly id="todo-item-check-1" />
-					<label className="form-check-label" htmlFor="todo-item-check-1">
-						{props.item.text}
-					</label>
-				</div>
-			</li>
+			<div className="form-check">
+				<input className="form-check-input" type="checkbox" value={props.item.completed} checked={props.item.completed} readOnly id="todo-item-check-1" />
+				<label className="form-check-label" htmlFor="todo-item-check-1">
+					{props.item.text}
+				</label>
+			</div>
 		</>
 	);
 };

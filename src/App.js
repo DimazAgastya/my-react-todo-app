@@ -1,6 +1,8 @@
 import TodoList from "../src/components/TodoList";
 
 function App() {
+	// taruh items disini
+
 	const items = [
 		{
 			id: 1,
@@ -9,7 +11,7 @@ function App() {
 		},
 		{
 			id: 2,
-			text: "Membuat rotu",
+			text: "Membuat Roti",
 			completed: false,
 		},
 		{
@@ -18,6 +20,8 @@ function App() {
 			completed: false,
 		},
 	];
+
+	// setelah row beri items untuk menunjukan hasil
 
 	return (
 		<div className="container">

@@ -31,7 +31,7 @@ const TodoItem = (props) => {
 	return (
 		<>
 			<div className="form-check">
-				<input className="form-check-input" type="checkbox" value={props.item.completed} checked={props.item.completed} readOnly id="todo-item-check-1" />
+				<input className="form-check-input" type="checkbox" value={`todo-item-check-${props.item.completed}`} id={`todo-item-check-${props.item.id}`} />
 				<label className="form-check-label" htmlFor="todo-item-check-1">
 					{props.item.text}
 				</label>
